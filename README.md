@@ -53,12 +53,28 @@ sudo systemctl start postgresql
 bash
 sudo -u postgres psql -c "CREATE DATABASE fraud_detection;"
 sudo -u postgres psql -d fraud_detection -c "
-CREATE TABLE transactions (
-    id SERIAL PRIMARY KEY,
-    user_id VARCHAR(50),
-    amount FLOAT,
+ CREATE TABLE transactions (
+    transaction_id VARCHAR(50) PRIMARY KEY,
     timestamp TIMESTAMP,
-    is_fraud BOOLEAN
+    amount DECIMAL(19, 4),
+    source_account VARCHAR(50),
+    destination_account VARCHAR(50),
+    transaction_type VARCHAR(20),
+    is_flagged BOOLEAN,
+    risk_score DECIMAL(5, 2),
+    processed_time TIMESTAMP
+);
+
+CREATE TABLE analytics (
+    id SERIAL PRIMARY KEY,
+    window_start TIMESTAMP,
+    window_end TIMESTAMP,
+    total_transactions INTEGER,
+    flagged_transactions INTEGER,
+    avg_transaction_amount DECIMAL(19, 4),
+    max_transaction_amount DECIMAL(19, 4),
+    processing_mode VARCHAR(10),
+    processed_time TIMESTAMP
 );"
 3. Run Components
 Component	Command

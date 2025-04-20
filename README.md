@@ -91,4 +91,3 @@ Chetan Naik
 3. **Structured Flow**: Follows standard GitHub project documentation format  
 4. **Responsive Badges**: Shows tech stack at a glance  
 
-You can paste this directly into a new `README.md` file in your project root. Let me know if yo

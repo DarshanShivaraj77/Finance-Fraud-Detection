@@ -1,4 +1,5 @@
 Finance Fraud Detection System
+
 Real-time and Batch Fraud Detection using Spark, Kafka, and PostgreSQL
 
 Tech Stack
@@ -128,6 +129,7 @@ Streaming Output	Batch Output
 This project is licensed under MIT License.
 
 🙌 Contributors
+
 Bharath Gowda M
 
 Darshan Shivaraj

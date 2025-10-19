@@ -93,13 +93,6 @@ Batch Processing	python3 batch_processor.py
 📜 License
 MIT License
 
-🙌 Contributors
-Bharath Gowda M
-
-Darshan Shivaraj
-
-Chetan Naik
-
 
 **Key features of this README:**  
 1. **Copy-Paste Friendly**: All commands are in ready-to-use code blocks  
